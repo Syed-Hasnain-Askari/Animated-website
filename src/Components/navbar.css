@@ -1,0 +1,28 @@
+
+  .header-heading {
+    font-size: calc((11 * (1em - 13px) - -2em - 3px));
+    color: #003a78;
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+  @media (max-width: 991px) {
+    .header-heading {
+      font-size: calc((5 * (1em - 13px) - -2em - 3px));
+      color: #003a78;
+      line-height: 1.2;
+      letter-spacing: 0;
+      font-weight: 600;
+
+    }
+  }
+  @media (max-width: 991px) {
+    .header-heading {
+      font-size: calc((4 * (1em - 13px) - -2em - 3px));
+      color: #003a78;
+      line-height: 1.2;
+      letter-spacing: 0;
+      font-weight: 500;
+  
+    }
+  }
