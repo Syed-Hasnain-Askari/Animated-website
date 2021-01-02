@@ -2,8 +2,32 @@ import React from 'react';
 import about from "../images/about-img.png";
 import square from '../images/square.svg';
 import './mainsection.css';
-import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll';
+import useWebAnimations from "@wellyshen/use-web-animations";
 export default function MainSection(){
+  const { ref, playState } = useWebAnimations({
+    keyframes: {
+      transform: "rotate(360deg)"
+    },
+    timing: {
+      delay: 500, // Start with a 500ms delay
+      duration: 20000, // Run for 1000ms
+      iterations: Infinity, // Repeat once
+      direction: "normal", // Run the animation forwards and then backwards
+      fill:"forwards"
+    },
+    onReady: ({ playState, animate, animation }) => {
+      // Triggered when the animation is ready to play (Google Chrome: available in v84+)
+    },
+    onUpdate: ({ playState, animate, animation }) => {
+      // Triggered when the animation enters the running state or changes state
+    },
+    onFinish: ({ playState, animate, animation }) => {
+      // Triggered when the animation enters the finished state (Google Chrome: available in v84+)
+    },
+    // More useful options...
+  });
+
     return (
         <div className="we-are-section container">
            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
@@ -31,7 +55,7 @@ export default function MainSection(){
         </div>
         <div className="row d-flex justify-content-lg-center">
             <div className="col">
-            <span><img src={square} className="img-fluid w-50 h-25 pb-5"/></span>
+            <span><img ref={ref} src={square} className=" w-75 h-100 pb-5"/></span>
             </div>
         </div>
         </ScrollAnimation>   

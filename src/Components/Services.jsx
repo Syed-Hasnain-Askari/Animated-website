@@ -1,11 +1,12 @@
 import React from 'react'
 import animation from '../images/animation3.gif';
-import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll';
 import './services.css';
 
 export default function Services() {
     return (
         <div>
+            <ScrollAnimation animateIn='fadeIn'>
             <div className="row">
                 <div className="col-md-6">
                     <img src={animation} alt="" className="img-fluid"/>
@@ -30,7 +31,9 @@ export default function Services() {
                         <div className="border-line"></div>
                         </div>
                 </div>
+                
             </div>
+            </ScrollAnimation>
         </div>
     )
 }

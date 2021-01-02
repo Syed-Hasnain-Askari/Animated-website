@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import image from "../images/animation2.gif";
-import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll';
 import logo from "../images/logo.png";
 
 export default function Navbar() {
