@@ -2,6 +2,11 @@
     background-color: #003a78;
     height: 500px;
 }
+@media (max-width: 991px) {
+    .footer-wrapper{
+        height: 630px;
+    }
+  }
 .footer-heading{
     font-size: calc((11 *(1em - 13px) - -2em - 3px));
     color: #fff;
