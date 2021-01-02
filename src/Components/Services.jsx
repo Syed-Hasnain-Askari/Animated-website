@@ -23,6 +23,12 @@ export default function Services() {
                          </p>
                         </div>
                    </div>
+                   <div className="row">
+                        <p className="explore-services mt-4">Explore services</p>
+                   </div>
+                   <div className="row">
+                        <div className="border-line"></div>
+                        </div>
                 </div>
             </div>
         </div>

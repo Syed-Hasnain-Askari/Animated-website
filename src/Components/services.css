@@ -12,3 +12,16 @@
     line-height: 1.8;
     letter-spacing: 0;
 }
+.explore-services{
+    font-size: calc((-.99 *(1em - 13px) - -2em - 12px));
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 700;
+    padding-bottom: 12px;
+    color: #003a78;
+}
+.border-line{
+    position: relative;
+    bottom: 20px;
+    border-bottom: 5px solid yellow;  
+}

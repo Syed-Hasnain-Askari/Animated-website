@@ -1,0 +1,30 @@
+.footer-wrapper{
+    background-color: #003a78;
+    height: 600px;
+}
+.footer-heading{
+    font-size: calc((11 *(1em - 13px) - -2em - 3px));
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 700;
+    margin-bottom: 37px;
+}
+.footer-paragraph{
+    font-size: calc((1 *(1em - 13px) - -2em - 12px));
+    color: #fff;
+    margin: 0 auto;
+}
+.sub-heading{
+    font-size: calc((-.99 *(1em - 13px) - -2em - 12px));
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+.border-line{
+    position: relative;
+    bottom: 20px;
+    width: 160px;
+    border-bottom: 5px solid yellow;
+}
