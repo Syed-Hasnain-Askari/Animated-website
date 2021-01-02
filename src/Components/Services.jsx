@@ -11,9 +11,9 @@ export default function Services() {
                     <img src={animation} alt="" className="img-fluid"/>
                 </div>
                 <div className="col-md-6">
-                   <div className="row d-flex justify-content-center justify-content-sm-center mx-auto">
+                   <div className="row d-flex justify-content-center mx-auto">
                         <div className="col-md-4 mt-5">
-                         <h1 className="services">Services.</h1>
+                         <h1 className="services text-center">Services.</h1>
                         </div>
                    </div>
                    <div className="row d-flex justify-content-center mx-auto">
@@ -23,8 +23,8 @@ export default function Services() {
                          </p>
                         </div>
                    </div>
-                   <div className="row">
-                        <p className="explore-services mt-4">Explore services</p>
+                   <div className="row d-flex justify-content-center justify-content-sm-center">
+                        <p className="explore-services mt-5">Explore services</p>
                    </div>
                    <div className="row">
                         <div className="border-line"></div>
