@@ -1,11 +1,13 @@
 import React from 'react';
 import './navbar.css';
 import image from "../images/animation2.gif";
+import ScrollAnimation from 'react-animate-on-scroll'
 import logo from "../images/logo.png";
 
 export default function Navbar() {
     return (
         <div className="header">
+        <ScrollAnimation animateIn='fadeIn'>
         <nav className="navbar navbar-light shodow">
           <div className="container">
             <a className="navbar-brand">
@@ -55,6 +57,7 @@ export default function Navbar() {
             </div>
           </div>
         </section>
+        </ScrollAnimation>
       </div>
     )
 }

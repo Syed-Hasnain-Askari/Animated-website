@@ -1,10 +1,12 @@
 import React from 'react';
 import about from "../images/about-img.png";
+import square from '../images/square.svg';
 import './mainsection.css';
-
-export default function MainSection() {
+import ScrollAnimation from 'react-animate-on-scroll'
+export default function MainSection(){
     return (
         <div className="we-are-section container">
+           <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
              <div className="row">
           <div className="col-md-12 d-flex justify-content-xl-start justify-content-center">
             <h1 className="we-are">We Are</h1>
@@ -27,6 +29,12 @@ export default function MainSection() {
             <img src={about} style={{width:"600px",height:"500px"}} className="we-are-img" />
           </div>
         </div>
+        <div className="row d-flex justify-content-lg-center">
+            <div className="col">
+            <span><img src={square} className="img-fluid w-50 h-25 pb-5"/></span>
+            </div>
         </div>
+        </ScrollAnimation>   
+        </div> 
     )
 }

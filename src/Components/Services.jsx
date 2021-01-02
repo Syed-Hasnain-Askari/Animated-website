@@ -1,5 +1,6 @@
 import React from 'react'
 import animation from '../images/animation3.gif';
+import ScrollAnimation from 'react-animate-on-scroll'
 import './services.css';
 
 export default function Services() {
